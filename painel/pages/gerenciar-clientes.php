@@ -18,7 +18,7 @@
           $clientes->execute();
           $clientes = $clientes->fetchAll();
           if(isset($_POST['acao'])){
-              echo '<div class="busca-result"><p>Foram encontrados <b>'.count($clientes).'</b> resultado(s)</p></div>';
+              echo '<div style="width:100%;" class="busca-result"><p>Foram encontrados <b>'.count($clientes).'</b> resultado(s)</p></div>';
           }
           foreach($clientes as $value){
         ?> 

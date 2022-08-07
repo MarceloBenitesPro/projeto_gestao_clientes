@@ -11,7 +11,7 @@ $(function(){
             $('.box-alert').remove();
             if(data.sucesso){
                 $('.ajax').prepend('<div class="box-alert sucesso"><i class="fa fa-check"></i> '+data.mensagem+' </div>');
-                if($('.ajax').hasAttr('atualizar') == false)
+                if($('.ajax').attr('atualizar') == undefined)
                 $('.ajax')[0].reset();
             }else{
                 $('.ajax').prepend('<div class="box-alert erro"><i class="fa fa-times"></i> '+data.mensagem+'</div>');

@@ -84,7 +84,7 @@
 				$imagem['type'] == 'image/png'){
 
 				$tamanho = intval($imagem['size']/1024);
-				if($tamanho < 300)
+				if($tamanho > 300)
 					return true;
 				else
 					return false;
